@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8_flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        #caja {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .rectangulo {
+            width: 50vw;
+            height: 20vw;
+            background-color: #ff6347;
+        }
+
+        .circulo {
+            width: 20vw;
+            height: 20vw;
+            background-color: #4682b4;
+            border-radius: 50%;
+            margin-right: 5%;
+        }
+
+        .cuadrado {
+            width: 20vw;
+            height: 20vw;
+            background-color: #32cd32;
+            align-self: center;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="caja">
+        <div class="top">
+            <div class="rectangulo"></div>
+            <div class="circulo"></div>
+        </div>
+        <div class="cuadrado"></div>
+    </div>
+</body>
+</html>
